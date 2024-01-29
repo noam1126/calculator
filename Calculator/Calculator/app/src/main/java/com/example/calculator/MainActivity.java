@@ -92,14 +92,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         solutionTv.setText(dataToCalcuate);
 
-        /*String lastChar=dataToCalcuate.substring(dataToCalcuate.length() - 1);
-        if((lastChar=="+")||(lastChar=="-")||(lastChar=="/")||(lastChar=="*"))
-        {
-            dataToCalcuate = dataToCalcuate.substring(0,dataToCalcuate.length()-1);
-            finalResult= getResult(dataToCalcuate);
-            resultTv.setText(finalResult);
-        }*/
-
         String finalResult= getResult(dataToCalcuate);
 
         if(!finalResult.equals("Err")){
